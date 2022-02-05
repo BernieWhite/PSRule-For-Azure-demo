@@ -11,6 +11,10 @@ binding:
   - type
   - resourceType
 
+convention:
+  include:
+  - '.\Azure.BicepInstall'
+
 # Use PSRule for Azure
 include:
   module:
