@@ -11,14 +11,17 @@ binding:
   - type
   - resourceType
 
-convention:
-  include:
-  - '.\Azure.BicepInstall'
-
 # Use PSRule for Azure
 include:
   module:
   - PSRule.Rules.Azure
+
+requires:
+  PSRule.Rules.Azure: '>=1.12.1'
+
+output:
+  culture:
+  - 'en-US'
 
 input:
   pathIgnore:
