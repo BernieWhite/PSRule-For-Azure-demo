@@ -17,7 +17,7 @@ include:
   - PSRule.Rules.Azure
 
 requires:
-  PSRule.Rules.Azure: '>=1.12.1'
+  PSRule.Rules.Azure: '>=1.12.2'
 
 output:
   culture:
