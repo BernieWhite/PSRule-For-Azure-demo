@@ -17,7 +17,7 @@ module storage '../../../../../modules/storage/v1/main.bicep' = {
 
     // Don't allow anonymous access types of blob or container.
     // Try setting this false to fail the Azure.Storage.BlobPublicAccess rule.
-    allowBlobPublicAccess: false
+    allowBlobPublicAccess: true
   }
 }
 

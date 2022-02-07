@@ -34,7 +34,7 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
     supportsHttpsTrafficOnly: true
     accessTier: 'Hot'
     allowBlobPublicAccess: allowBlobPublicAccess
-    minimumTlsVersion: 'TLS1_2'
+    minimumTlsVersion: 'TLS1_0'
   }
   tags: {
     env: 'test'
