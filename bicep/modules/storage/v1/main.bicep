@@ -32,9 +32,9 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
       defaultAction: 'Deny'
     }
     supportsHttpsTrafficOnly: true
-    accessTier: 'Hot'
+    accessTier: 'Cool'
     allowBlobPublicAccess: allowBlobPublicAccess
-    minimumTlsVersion: 'TLS1_2'
+    minimumTlsVersion: 'TLS1_0'
   }
   tags: {
     env: 'test'

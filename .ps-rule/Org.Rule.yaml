@@ -21,3 +21,16 @@ spec:
         - 'test'
         - 'dev'
       field: 'tags.env'
+
+---
+# Synopsis: Our org requires hot storage only. See policy pol-001.
+apiVersion: github.com/microsoft/PSRule/v1
+kind: Rule
+metadata:
+  name: Org.Azure.HotStorage
+spec:
+  type:
+  - Microsoft.Storage/storageAccounts
+  condition:
+    field: 'properties.accessTier'
+    equals: 'Hot'
